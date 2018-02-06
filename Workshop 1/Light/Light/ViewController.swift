@@ -20,7 +20,21 @@ class ViewController: UIViewController {
         }
     }
     
+    func sayHello(to person: String) -> String {
+        return "Hello, " + person
+    }
+    
     func updateUI() {
+        
+        
+        
+        
+        let greeting = sayHello(to: "Brian")
+        let truth = sayHello(to: "Kesha was robbed at the GRAMMYs")
+        
+        print(greeting)
+        print(truth)
+        
         if lightOn {
             print("Light on!")
             view.backgroundColor = .white
